@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+      <br>
+      <h3 class="text-center">SURVEY FORM</h3>
+      <form>
+        <div class="mb-3">
+          <label class="form-label">Name  <i class="fa fa-asterisk ast" aria-hidden="true"></i></label>
+          <div class="row g-3">
+            <div class="col-4">
+              <input type="text" class="form-control" name="f_name" id="f_name" placeholder="First name" aria-label="First name" required>
+              <div id="first" class="form-text">
+                First
+              </div>
+            </div>
+            <div class="col-4">
+              <input type="text" class="form-control" name="l_name" id="l_name" placeholder="Last name" aria-label="Last name">
+              <div id="last" class="form-text">
+                Last
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 col-md-6">
+          <label for="email" class="form-label">Email  <i class="fa fa-asterisk ast" aria-hidden="true"></i></label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="mb-3">
+          <label for="rating" class="form-label">Your Experience  <i class="fa fa-asterisk ast" aria-hidden="true"></i></label>
+          <br>
+          <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5" required/>
+            <label class="star" for="star5" title="Awesome" aria-hidden="true"></label>
+            <input type="radio" id="star4" name="rating" value="4" required/>
+            <label class="star" for="star4" title="Great" aria-hidden="true"></label>
+            <input type="radio" id="star3" name="rating" value="3" required/>
+            <label class="star" for="star3" title="Very good" aria-hidden="true"></label>
+            <input type="radio" id="star2" name="rating" value="2" required/>
+            <label class="star" for="star2" title="Good" aria-hidden="true"></label>
+            <input type="radio" id="star1" name="rating" value="1" required/>
+            <label class="star" for="star1" title="Bad" aria-hidden="true"></label>
+          </div>
+          <br><br>
+          <div id="rating-helper" class="form-text">
+            Overall, how would you rate your experience with us?
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="satisfaction" class="form-label">How satisfied are you with  <i class="fa fa-asterisk ast" aria-hidden="true"></i></label>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col" width="25%"></th>
+                  <th scope="col" width="15%">Very Unsatisfied</th>
+                  <th scope="col" width="15%">Unsatisfied</th>
+                  <th scope="col" width="15%">Neutral</th>
+                  <th scope="col" width="15%">Satisfied</th>
+                  <th scope="col" width="15%">Very Satisfied</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">Purchase</td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="purchase" id="service" value="option1" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="purchase" id="p-s2" value="option2" required>
+                  </td>
+                  <td class="rad-inp">       
+                      <input class="form-check-input" type="radio" name="purchase" id="p-s3" value="option3" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="purchase" id="p-s4" value="option4" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="purchase" id="p-s5" value="option5" required>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Service</td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="service" id="s-s1" value="option1" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="service" id="s-s2" value="option2" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="service" id="s-s3" value="option3" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="service" id="s-s4" value="option4" required>
+                  </td>
+                  <td class="rad-inp">  
+                      <input class="form-check-input" type="radio" name="service" id="s-s5" value="option5" required>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Company Overall</td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="company" id="c-s1" value="option1" required>
+                  </td>
+                  <td class="rad-inp">    
+                      <input class="form-check-input" type="radio" name="company" id="c-s2" value="option2" required>
+                  </td>
+                  <td class="rad-inp"> 
+                      <input class="form-check-input" type="radio" name="company" id="c-s3" value="option3" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="company" id="c-s4" value="option4" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="company" id="c-s5" value="option5" required>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="likely" class="form-label">How likely are you to  <i class="fa fa-asterisk ast" aria-hidden="true"></i></label>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col" width="25%"></th>
+                  <th scope="col" width="15%">Very Unlikely</th>
+                  <th scope="col" width="15%">Unlikely</th>
+                  <th scope="col" width="15%">Neutral</th>
+                  <th scope="col" width="15%">Likely</th>
+                  <th scope="col" width="15%">Very Likely</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">Buy from us again</td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="buy" id="b-l1" value="option1" required>
+                  </td>
+                  <td class="rad-inp"> 
+                      <input class="form-check-input" type="radio" name="buy" id="b-l2" value="option2" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="buy" id="b-l3" value="option3" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="buy" id="b-l4" value="option4" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="buy" id="b-l5" value="option5" required>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Recommend our products to others</td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="recommend" id="r-l1" value="option1" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="recommend" id="r-l2" value="option2" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="recommend" id="r-l3" value="option3" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="recommend" id="r-l4" value="option4" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="recommend" id="r-l5" value="option5" required>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Recommend our company to others</td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="rc" id="rc-1" value="option1" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="rc" id="rc-2" value="option2" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="rc" id="rc-3" value="option3" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="rc" id="rc-4" value="option4" required>
+                  </td>
+                  <td class="rad-inp">
+                      <input class="form-check-input" type="radio" name="rc" id="rc-5" value="option5" required>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="comments" class="form-label">Additional comments or suggestions</label>
+          <textarea class="form-control" name="comments" id="comments" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+          <button type="submit" class="btn btn-light mb-3 bg0">Submit</button>
+        </div>
+      </form>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

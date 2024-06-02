@@ -1,0 +1,48 @@
+label{
+    font-weight: bold;
+}
+.bg0{
+    background-color: rgb(241, 241, 241) !important;
+    font-weight: 450 !important;
+}
+.ast{
+    vertical-align: super;
+    font-size: 10px !important;
+    color: rgb(250, 43, 43);
+}
+table th {
+    text-align: center; 
+    font-weight: 400;
+}
+.rad-inp{
+    text-align: center !important;
+}
+.rad-inp input{
+    border: 1px solid black;
+}
+.rating {
+    border: none;
+    float: left;
+}  
+.rating > label {
+    color: #90A0A3;
+    float: right;
+}
+.rating > label:before {
+    margin: 5px;
+    font-size: 1.5em;
+    font-family: FontAwesome;
+    content: "\f005";
+    display: inline-block;
+} 
+.rating > input {
+    display: none;
+} 
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #F79426;
+}
+.mb-3 input, .mb-3 textarea{
+    border: 1px solid black;
+}
